@@ -89,15 +89,6 @@ const education = [
 
 const experience = [
   {
-    period: "Fall 2024 - Present",
-    title: "Graduate Research",
-    org: "Stanford University",
-    detail: [
-      "Research on sampling, Markov chains, randomized algorithms, and parallel/distributed algorithms.",
-      "Current projects include parallel sampling, broadcast congested clique algorithms, rounding on the hypersimplex, and thin matching problems.",
-    ],
-  },
-  {
     period: "Oct 2022 - Sep 2024",
     title: "Research Assistant",
     org: "University of Washington",
@@ -345,7 +336,7 @@ const Index = () => {
         </section>
 
         <section className="mt-16">
-          <SectionHeading icon={Briefcase} title="Research Experience" />
+          <SectionHeading icon={Briefcase} title="Undergraduate Research Experience" />
           <div className="mt-6 space-y-5">
             {experience.map((item) => (
               <TimelineItem key={`${item.period}-${item.org}`} {...item} />

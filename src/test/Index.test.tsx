@@ -17,6 +17,10 @@ describe("Index", () => {
     expect(
       screen.getByText("Constant-Stretch Rounding on the Hypersimplex"),
     ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Undergraduate Research Experience" }),
+    ).toBeInTheDocument();
+    expect(screen.queryByText("Graduate Research")).not.toBeInTheDocument();
     expect(screen.getAllByText(/arXiv preprint/)).toHaveLength(5);
   });
 
