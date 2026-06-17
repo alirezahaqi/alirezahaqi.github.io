@@ -89,31 +89,47 @@ const education = [
 
 const experience = [
   {
-    period: "Oct 2022 - Ongoing",
+    period: "Fall 2024 - Present",
+    title: "Graduate Research",
+    org: "Stanford University",
+    detail: [
+      "Research on sampling, Markov chains, randomized algorithms, and parallel/distributed algorithms.",
+      "Current projects include parallel sampling, broadcast congested clique algorithms, rounding on the hypersimplex, and thin matching problems.",
+    ],
+  },
+  {
+    period: "Oct 2022 - Sep 2024",
     title: "Research Assistant",
     org: "University of Washington",
+    detail:
+      "Worked on theoretical computer science problems in approximation, combinatorics, and randomized algorithms.",
   },
   {
     period: "Jul 2023 - Nov 2023",
     title: "Research Assistant",
     org: "Max Planck Institute",
+    detail: "Continued research on ordering and queueing problems in combinatorial optimization.",
   },
   {
     period: "Jul 2022 - Sep 2022",
     title: "Research Assistant",
     org: "Max Planck Institute",
+    detail:
+      "Collaborated on combinatorial optimization research that led to work on improving order with queues.",
   },
   {
     period: "Feb 2022 - Jul 2022",
     title: "Research Assistant",
     org: "Sharif University of Technology",
+    detail: "Worked on massively parallel algorithms for clustering and diversity maximization.",
   },
 ];
 
 const honors = [
-  "Gold Medal, International Mathematical Olympiad, Summer 2020",
-  "Recognition as a top 50 student in mathematics",
-  "Gold and Silver Medals, National Olympiad of Mathematics, Summer 2019/2018",
+  "Gold Medal, International Mathematical Olympiad, 2020",
+  "Silver Medal, Romanian Masters of Mathematics, 2020",
+  "Gold Medal, National Mathematics Olympiad, 2019",
+  "Silver Medal, National Mathematics Olympiad, 2018",
 ];
 
 const service = [
@@ -191,14 +207,22 @@ const TimelineItem = ({
   period: string;
   title: string;
   org?: string;
-  detail?: string;
+  detail?: string | string[];
 }) => (
   <div className="grid gap-1 text-sm sm:grid-cols-[8.5rem_1fr] sm:gap-5">
     <span className="text-muted-foreground">{period}</span>
     <div>
       <p className="font-medium text-foreground">{title}</p>
       {org && <p className="text-primary">{org}</p>}
-      {detail && <p className="mt-0.5 text-muted-foreground">{detail}</p>}
+      {Array.isArray(detail) ? (
+        <ul className="mt-1 space-y-1 text-muted-foreground">
+          {detail.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      ) : (
+        detail && <p className="mt-0.5 text-muted-foreground">{detail}</p>
+      )}
     </div>
   </div>
 );
