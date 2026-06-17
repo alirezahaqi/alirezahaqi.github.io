@@ -6,18 +6,24 @@ The local project is complete on `main` and the remote is configured as:
 git remote -v
 ```
 
-Expected remote:
+Expected personal-site remote:
 
 ```text
-origin  https://github.com/alirezahaqi/phd-website.git
+origin  git@github.com:alirezahaqi/alirezahaqi.github.io.git
 ```
 
 ## Repository
 
-The site is uploaded to the private GitHub repository:
+The live personal GitHub Pages site is uploaded to:
 
 ```text
-https://github.com/alirezahaqi/phd-website
+https://github.com/alirezahaqi/alirezahaqi.github.io
+```
+
+It publishes at:
+
+```text
+https://alirezahaqi.github.io/
 ```
 
 ## Push from this checkout
@@ -30,4 +36,4 @@ git push -u origin main
 
 ## GitHub Pages
 
-The repository includes `.github/workflows/deploy.yml`, which can be run manually from GitHub Actions to build with npm and deploy `dist` to GitHub Pages after Pages is enabled for the repository.
+The repository includes `.github/workflows/deploy.yml`, which builds the Vite app with npm and deploys `dist` to GitHub Pages on every push to `main`. It can also be run manually from GitHub Actions.

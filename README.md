@@ -2,6 +2,8 @@
 
 React/Vite personal academic website for Alireza Haqi.
 
+Live site: `https://alirezahaqi.github.io/`
+
 ## Profile content
 
 The current profile content is based on:
