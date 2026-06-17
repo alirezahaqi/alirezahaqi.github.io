@@ -1,257 +1,50 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="Alireza Haqi's research portfolio in theoretical computer science, algorithms, graph optimization, rounding, and sampling."
-    >
-    <title>Alireza Haqi | Research Portfolio</title>
-    <link rel="icon" href="assets/alireza-haqi-avatar.png">
-    <link rel="preload" href="assets/alireza-haqi-avatar.png" as="image">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#226d63" />
+    <link rel="icon" href="%BASE_URL%favicon.ico" />
+    <link rel="manifest" href="%BASE_URL%site.webmanifest" />
+    <title>Alireza Haqi | Stanford CS PhD Student</title>
+    <meta name="description" content="Alireza Haqi is a Computer Science PhD student at Stanford University researching theoretical computer science, parallel and distributed algorithms, randomized sampling, graph optimization, and rounding." />
+    <meta name="author" content="Alireza Haqi" />
+
+    <meta property="og:title" content="Alireza Haqi | Stanford CS PhD Student" />
+    <meta property="og:description" content="Research portfolio for Alireza Haqi, Computer Science PhD student at Stanford University." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Alireza Haqi",
+        "email": "ahaqi@stanford.edu",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Stanford University"
+        },
         "url": "https://github.com/alirezahaqi",
-        "image": "assets/alireza-haqi-avatar.png",
         "sameAs": [
           "https://github.com/alirezahaqi",
+          "https://www.linkedin.com/in/alireza-h-92b765140/",
+          "https://scholar.google.com/citations?user=N_DeI4IAAAAJ&hl=en",
           "https://arxiv.org/search/?query=Alireza+Haqi&searchtype=author"
         ],
         "knowsAbout": [
           "Theoretical computer science",
-          "Algorithms",
+          "Parallel algorithms",
+          "Distributed algorithms",
           "Randomized sampling",
           "Graph optimization",
-          "Distributed computation"
+          "Correlated rounding"
         ]
       }
     </script>
   </head>
+
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Alireza Haqi home">Alireza Haqi</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Theoretical Computer Science</p>
-          <h1 id="hero-title">Alireza Haqi</h1>
-          <p class="lead">
-            I work on algorithms for sampling, graph optimization, correlated rounding,
-            and distributed computation.
-          </p>
-          <p class="hero-note">
-            Recent projects study thin perfect matchings, constant-stretch rounding on the
-            hypersimplex, fast spanning-tree sampling, and parallel sampling via autospeculation.
-          </p>
-          <div class="hero-actions" aria-label="Primary links">
-            <a class="button button-primary" href="#publications">View publications</a>
-            <a class="button button-secondary" href="https://github.com/alirezahaqi">GitHub</a>
-          </div>
-        </div>
-        <figure class="hero-portrait">
-          <img src="assets/alireza-haqi-avatar.png" alt="Alireza Haqi">
-          <figcaption>Research portfolio updated from public GitHub and arXiv data.</figcaption>
-        </figure>
-      </section>
-
-      <section class="section intro-band" aria-label="Profile highlights">
-        <div class="highlight">
-          <span class="highlight-value">5</span>
-          <span class="highlight-label">arXiv-indexed papers</span>
-        </div>
-        <div class="highlight">
-          <span class="highlight-value">2026</span>
-          <span class="highlight-label">latest preprints</span>
-        </div>
-        <div class="highlight">
-          <span class="highlight-value">cs.DS</span>
-          <span class="highlight-label">primary research area</span>
-        </div>
-      </section>
-
-      <section class="section" id="research" aria-labelledby="research-title">
-        <div class="section-heading">
-          <p class="eyebrow">Research</p>
-          <h2 id="research-title">Current focus</h2>
-          <p>
-            My recent work is centered on the design and analysis of algorithms where
-            probability, discrete structure, and computation models interact.
-          </p>
-        </div>
-        <div class="focus-grid">
-          <article class="focus-card">
-            <h3>Sampling and counting</h3>
-            <p>
-              Algorithms that turn structural or oracle access into faster high-accuracy
-              sampling procedures.
-            </p>
-          </article>
-          <article class="focus-card">
-            <h3>Graph optimization</h3>
-            <p>
-              Matchings, spanning trees, cuts, and rounding questions motivated by graph
-              algorithms and approximation.
-            </p>
-          </article>
-          <article class="focus-card">
-            <h3>Distributed algorithms</h3>
-            <p>
-              Fast randomized routines in constrained communication models such as the
-              Broadcast Congested Clique.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-alt" aria-labelledby="updates-title">
-        <div class="section-heading">
-          <p class="eyebrow">Updates</p>
-          <h2 id="updates-title">Recent work</h2>
-        </div>
-        <ol class="timeline">
-          <li>
-            <time datetime="2026-05-31">May 31, 2026</time>
-            <span>Posted preprints on thin perfect matchings and hypersimplex rounding.</span>
-          </li>
-          <li>
-            <time datetime="2026-03-26">March 26, 2026</time>
-            <span>Posted work on random spanning-tree sampling in Broadcast Congested Clique.</span>
-          </li>
-          <li>
-            <time datetime="2025-11-11">November 11, 2025</time>
-            <span>Posted work on parallel sampling via autospeculation.</span>
-          </li>
-        </ol>
-      </section>
-
-      <section class="section" id="publications" aria-labelledby="publications-title">
-        <div class="section-heading section-heading-row">
-          <div>
-            <p class="eyebrow">Publications</p>
-            <h2 id="publications-title">Selected papers</h2>
-            <p>Current arXiv records under the exact author name "Alireza Haqi".</p>
-          </div>
-          <div class="filter-group" aria-label="Filter publications">
-            <button class="filter-button is-active" type="button" data-filter="all">All</button>
-            <button class="filter-button" type="button" data-filter="2026">2026</button>
-            <button class="filter-button" type="button" data-filter="2025">2025</button>
-            <button class="filter-button" type="button" data-filter="2022">2022</button>
-          </div>
-        </div>
-
-        <div class="publication-list" aria-live="polite">
-          <article class="publication-card" data-year="2026">
-            <div class="publication-meta">
-              <span>2026</span>
-              <span>cs.DS</span>
-            </div>
-            <h3>On Thin Perfect Matchings up to Polylogarithmic Factors</h3>
-            <p class="authors">Alireza Haqi, Shayan Oveis Gharan</p>
-            <p>
-              Resolves the thin matching problem up to polylogarithmic factors and studies
-              both support-restricted and unrestricted perfect matchings.
-            </p>
-            <a class="text-link" href="https://arxiv.org/abs/2606.01330">arXiv:2606.01330</a>
-          </article>
-
-          <article class="publication-card" data-year="2026">
-            <div class="publication-meta">
-              <span>2026</span>
-              <span>cs.DS</span>
-            </div>
-            <h3>Constant-Stretch Rounding on the Hypersimplex</h3>
-            <p class="authors">Nima Anari, Alireza Haqi, Eric Ma</p>
-            <p>
-              Gives a constant-stretch correlated rounding scheme for the hypersimplex and
-              an at-most-k extension via dummy coordinates.
-            </p>
-            <a class="text-link" href="https://arxiv.org/abs/2606.00996">arXiv:2606.00996</a>
-          </article>
-
-          <article class="publication-card" data-year="2026">
-            <div class="publication-meta">
-              <span>2026</span>
-              <span>cs.DS / cs.DC</span>
-            </div>
-            <h3>Fast Spanning Tree Sampling in Broadcast Congested Clique</h3>
-            <p class="authors">Nima Anari, Alireza Haqi</p>
-            <p>
-              Presents a polylogarithmic-round algorithm for sampling random spanning trees
-              in the Broadcast Congested Clique model.
-            </p>
-            <a class="text-link" href="https://arxiv.org/abs/2603.25018">arXiv:2603.25018</a>
-          </article>
-
-          <article class="publication-card" data-year="2025">
-            <div class="publication-meta">
-              <span>2025</span>
-              <span>cs.DS / cs.LG</span>
-            </div>
-            <h3>Parallel Sampling via Autospeculation</h3>
-            <p class="authors">
-              Nima Anari, Carlo Baronio, CJ Chen, Alireza Haqi, Frederic Koehler, Anqi Li,
-              Thuy-Duong Vuong
-            </p>
-            <p>
-              Introduces speculative rejection sampling for parallel speedups in any-order
-              autoregressive and denoising diffusion sampling settings.
-            </p>
-            <a class="text-link" href="https://arxiv.org/abs/2511.07869">arXiv:2511.07869</a>
-          </article>
-
-          <article class="publication-card" data-year="2022">
-            <div class="publication-meta">
-              <span>2022</span>
-              <span>cs.DS</span>
-            </div>
-            <h3>Improving Order with Queues</h3>
-            <p class="authors">
-              Andreas Karrenbauer, Kurt Mehlhorn, Pranabendu Misra, Paolo Luigi Rinaldi,
-              Anna Twelsiek, Alireza Haqi, Siavash Rahimi Shateranloo
-            </p>
-            <p>
-              Studies how parallel FIFO queues can improve sequence order and gives optimal
-              results for several sortedness measures.
-            </p>
-            <a class="text-link" href="https://arxiv.org/abs/2207.02476">arXiv:2207.02476</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-copy">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Find me online</h2>
-          <p>
-            The public GitHub profile below is the currently verified contact surface in this
-            project. More profile links can be added when a CV, email address, or homepage
-            source is available.
-          </p>
-        </div>
-        <div class="contact-links">
-          <a class="button button-primary" href="https://github.com/alirezahaqi">GitHub profile</a>
-          <a class="button button-secondary" href="https://arxiv.org/search/?query=Alireza+Haqi&searchtype=author">arXiv author search</a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>Alireza Haqi</p>
-      <p>Static personal website. Last content refresh: June 2026.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -1,0 +1,15 @@
+{
+  "name": "Alireza Haqi Research Portfolio",
+  "short_name": "Alireza Haqi",
+  "description": "Personal academic website for Alireza Haqi.",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "256x256",
+      "type": "image/x-icon"
+    }
+  ],
+  "theme_color": "#226d63",
+  "background_color": "#fbfcfd",
+  "display": "standalone"
+}

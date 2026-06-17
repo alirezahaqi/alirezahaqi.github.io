@@ -1,34 +1,38 @@
 # Personal Website
 
-This is the local project for Alireza Haqi's personal research website.
+React/Vite personal academic website for Alireza Haqi.
 
-The site is intentionally dependency-free:
+## Profile content
 
-- `index.html` contains the page structure and profile content.
-- `styles.css` contains the responsive visual design.
-- `script.js` handles publication filtering.
-- `assets/alireza-haqi-avatar.png` is the GitHub avatar downloaded from the public profile.
+The current profile content is based on:
 
-## Run locally
+- `/Users/alirezahaqi/Downloads/my-phd-portfolio-main.zip`
+- `public/Alireza_Haqi_CV.pdf`
+- public arXiv records for `Alireza Haqi`
+- the public GitHub profile at `https://github.com/alirezahaqi`
 
-Open `index.html` directly in a browser, or run:
+The copied app now includes:
+
+- Stanford CS PhD profile and advisor links
+- verified contact links, including email, LinkedIn, Google Scholar, GitHub, and CV
+- six publications, including the 2026 arXiv preprints
+- education, research experience, honors, teaching, and service sections
+
+## Development
 
 ```sh
-python3 -m http.server 4173
+npm install
+npm run dev
 ```
 
-Then visit `http://localhost:4173`.
+Useful checks:
 
-## Source status
+```sh
+npm run lint
+npm run test
+npm run build
+```
 
-The requested source repository, `alirezahaqi/my-phd-portfolio`, could not be copied in this session because GitHub returned authentication or visibility errors:
+## Deployment
 
-- `git clone https://github.com/alirezahaqi/my-phd-portfolio.git` asked for credentials.
-- The installed GitHub connector returned `404` for `alirezahaqi/my-phd-portfolio`.
-
-This version was built from current public evidence instead:
-
-- GitHub public profile: `https://github.com/alirezahaqi`
-- arXiv author query for `Alireza Haqi`
-
-Once the source repository is made accessible to this environment, its content can be merged into this project.
+Pushes to `main` run the included GitHub Pages workflow, which installs dependencies, builds the Vite app, and deploys `dist`.
