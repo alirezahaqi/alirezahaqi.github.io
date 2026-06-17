@@ -66,12 +66,6 @@ const publications: Publication[] = [
   },
 ];
 
-const researchAreas = [
-  "Parallel and distributed algorithms",
-  "Randomized sampling and counting",
-  "Graph optimization, matchings, rounding, and clustering",
-];
-
 const education = [
   {
     period: "Autumn 2024 - Present",
@@ -284,20 +278,6 @@ const Index = () => {
         </header>
 
         <section className="mt-14">
-          <SectionHeading icon={BookOpen} title="Research" />
-          <ul className="mt-5 grid gap-3 sm:grid-cols-3">
-            {researchAreas.map((area) => (
-              <li
-                key={area}
-                className="rounded-md border border-border bg-card px-4 py-3 text-sm font-medium leading-snug text-foreground"
-              >
-                {area}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mt-16">
           <SectionHeading icon={FileText} title="Publications" />
           <ol className="mt-6 space-y-4">
             {publications.map((pub) => (

@@ -20,6 +20,8 @@ describe("Index", () => {
     expect(
       screen.getByRole("heading", { name: "Undergraduate Research Experience" }),
     ).toBeInTheDocument();
+    expect(screen.queryByRole("heading", { name: "Research" })).not.toBeInTheDocument();
+    expect(screen.queryByText("Randomized sampling and counting")).not.toBeInTheDocument();
     expect(screen.queryByText("Graduate Research")).not.toBeInTheDocument();
     expect(screen.getAllByText(/arXiv preprint/)).toHaveLength(5);
   });
