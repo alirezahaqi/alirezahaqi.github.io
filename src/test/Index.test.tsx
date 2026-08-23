@@ -14,8 +14,12 @@ describe("Index", () => {
     expect(
       screen.getByText("On Thin Perfect Matchings up to Polylogarithmic Factors"),
     ).toBeInTheDocument();
+    expect(screen.getByText("On the Gap of Finite Posets")).toBeInTheDocument();
+    expect(screen.getByText("Parallel Sampling from the Ising p-Spin Model")).toBeInTheDocument();
+    expect(screen.getByText("On Rounding on the Hypersimplex")).toBeInTheDocument();
+    expect(screen.getByText("STOC 2026, pp. 1168-1179")).toBeInTheDocument();
     expect(
-      screen.getByText("Constant-Stretch Rounding on the Hypersimplex"),
+      screen.getByText("Journal of Combinatorial Optimization 51(3), 39, 2026"),
     ).toBeInTheDocument();
     expect(
       screen.getByRole("heading", { name: "Undergraduate Research Experience" }),
@@ -24,6 +28,7 @@ describe("Index", () => {
     expect(screen.queryByText("Randomized sampling and counting")).not.toBeInTheDocument();
     expect(screen.queryByText("Graduate Research")).not.toBeInTheDocument();
     expect(screen.getAllByText(/arXiv preprint/)).toHaveLength(5);
+    expect(screen.getAllByRole("listitem").length).toBeGreaterThanOrEqual(8);
   });
 
   it("links to verified profile destinations", () => {

@@ -25,13 +25,25 @@ type Publication = {
 
 const publications: Publication[] = [
   {
+    title: "On the Gap of Finite Posets",
+    authors: "Alireza Haqi",
+    venue: "arXiv preprint, 2026",
+    link: "https://arxiv.org/abs/2608.12678",
+  },
+  {
+    title: "Parallel Sampling from the Ising p-Spin Model",
+    authors: "Nima Anari, Aniket Das, Alireza Haqi",
+    venue: "arXiv preprint, 2026",
+    link: "https://arxiv.org/abs/2607.12348",
+  },
+  {
     title: "On Thin Perfect Matchings up to Polylogarithmic Factors",
     authors: "Alireza Haqi, Shayan Oveis Gharan",
     venue: "arXiv preprint, 2026",
     link: "https://arxiv.org/abs/2606.01330",
   },
   {
-    title: "Constant-Stretch Rounding on the Hypersimplex",
+    title: "On Rounding on the Hypersimplex",
     authors: "Nima Anari, Alireza Haqi, Eric Ma",
     venue: "arXiv preprint, 2026",
     link: "https://arxiv.org/abs/2606.00996",
@@ -46,8 +58,15 @@ const publications: Publication[] = [
     title: "Parallel Sampling via Autospeculation",
     authors:
       "Nima Anari, Carlo Baronio, CJ Chen, Alireza Haqi, Frederic Koehler, Anqi Li, Thuy-Duong Vuong",
-    venue: "arXiv preprint, 2025",
+    venue: "STOC 2026, pp. 1168-1179",
     link: "https://arxiv.org/abs/2511.07869",
+  },
+  {
+    title: "Improving order with queues",
+    authors:
+      "Andreas Karrenbauer, Kurt Mehlhorn, Pranabendu Misra, Paolo Luigi Rinaldi, Anna Twelsiek, Alireza Haqi, Siavash Rahimi Shateranloo",
+    venue: "Journal of Combinatorial Optimization 51(3), 39, 2026",
+    link: "https://doi.org/10.1007/s10878-026-01419-2",
   },
   {
     title:
@@ -56,13 +75,6 @@ const publications: Publication[] = [
     venue: "SPAA 2023",
     award: "Outstanding Paper Award",
     link: "https://doi.org/10.1145/3558481.3591077",
-  },
-  {
-    title: "Improving Order with Queues",
-    authors:
-      "Andreas Karrenbauer, Kurt Mehlhorn, Pranabendu Misra, Paolo Luigi Rinaldi, Anna Twelsiek, Alireza Haqi, Siavash Rahimi Shateranloo",
-    venue: "arXiv preprint, 2022",
-    link: "https://arxiv.org/abs/2207.02476",
   },
 ];
 
@@ -346,7 +358,7 @@ const Index = () => {
         </section>
 
         <footer className="mt-20 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          <p>Content refreshed from the bundled CV and public arXiv records in June 2026.</p>
+          <p>Content refreshed from the bundled CV and public Google Scholar records in August 2026.</p>
           <p className="mt-1">Copyright {new Date().getFullYear()} Alireza Haqi.</p>
         </footer>
       </div>
