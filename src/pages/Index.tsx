@@ -25,6 +25,19 @@ type Publication = {
 
 const publications: Publication[] = [
   {
+    title: "Sublinear Metric Distortion for Matching",
+    authors:
+      "Moses Charikar, Alireza Haqi, Jabari Hastings, Yichen Huang, Prasanna Ramakrishnan",
+    venue: "arXiv preprint, 2026",
+    link: "https://arxiv.org/abs/2611.05777",
+  },
+  {
+    title: "Sampling Line-Graph Colorings with Constant Extra Colors",
+    authors: "Alireza Haqi",
+    venue: "arXiv preprint, 2026",
+    link: "https://arxiv.org/abs/2609.27440",
+  },
+  {
     title: "On the Gap of Finite Posets",
     authors: "Alireza Haqi",
     venue: "arXiv preprint, 2026",
@@ -33,8 +46,8 @@ const publications: Publication[] = [
   {
     title: "Parallel Sampling from the Ising p-Spin Model",
     authors: "Nima Anari, Aniket Das, Alireza Haqi",
-    venue: "arXiv preprint, 2026",
-    link: "https://arxiv.org/abs/2607.12348",
+    venue: "RANDOM 2026, LIPIcs 392, pp. 71:1-71:23",
+    link: "https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2026.71",
   },
   {
     title: "On Thin Perfect Matchings up to Polylogarithmic Factors",
@@ -358,7 +371,7 @@ const Index = () => {
         </section>
 
         <footer className="mt-20 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          <p>Content refreshed from the bundled CV and public Google Scholar records in August 2026.</p>
+          <p>Publications updated November 10, 2026.</p>
           <p className="mt-1">Copyright {new Date().getFullYear()} Alireza Haqi.</p>
         </footer>
       </div>

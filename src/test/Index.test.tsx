@@ -11,11 +11,16 @@ describe("Index", () => {
     ).toBeInTheDocument();
     expect(screen.getByText("PhD Student in Computer Science")).toBeInTheDocument();
     expect(screen.getByText("ahaqi@stanford.edu")).toBeInTheDocument();
+    expect(screen.getByText("Sublinear Metric Distortion for Matching")).toBeInTheDocument();
+    expect(
+      screen.getByText("Sampling Line-Graph Colorings with Constant Extra Colors"),
+    ).toBeInTheDocument();
     expect(
       screen.getByText("On Thin Perfect Matchings up to Polylogarithmic Factors"),
     ).toBeInTheDocument();
     expect(screen.getByText("On the Gap of Finite Posets")).toBeInTheDocument();
     expect(screen.getByText("Parallel Sampling from the Ising p-Spin Model")).toBeInTheDocument();
+    expect(screen.getByText("RANDOM 2026, LIPIcs 392, pp. 71:1-71:23")).toBeInTheDocument();
     expect(screen.getByText("On Rounding on the Hypersimplex")).toBeInTheDocument();
     expect(screen.getByText("STOC 2026, pp. 1168-1179")).toBeInTheDocument();
     expect(
@@ -27,8 +32,8 @@ describe("Index", () => {
     expect(screen.queryByRole("heading", { name: "Research" })).not.toBeInTheDocument();
     expect(screen.queryByText("Randomized sampling and counting")).not.toBeInTheDocument();
     expect(screen.queryByText("Graduate Research")).not.toBeInTheDocument();
-    expect(screen.getAllByText(/arXiv preprint/)).toHaveLength(5);
-    expect(screen.getAllByRole("listitem").length).toBeGreaterThanOrEqual(8);
+    expect(screen.getAllByText(/arXiv preprint/)).toHaveLength(6);
+    expect(screen.getAllByRole("listitem").length).toBeGreaterThanOrEqual(10);
   });
 
   it("links to verified profile destinations", () => {
